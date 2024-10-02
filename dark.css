@@ -1,0 +1,172 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc; /* Light background color for the page */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 2rem auto; /* Center the container horizontally */
+    padding: 2rem;
+    background: #fff; /* White background for the content area */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for a raised effect */
+}
+
+h1 {
+    text-align: center;
+    color: #333; /* Dark text color for the heading */
+    margin-bottom: 1.5rem;
+}
+
+form {
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555; /* Medium text color for labels */
+}
+
+input, select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd; /* Light border color for input fields */
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in element’s total width and height */
+}
+
+button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff; /* Primary color for the button */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+}
+
+.filter-container {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between; /* Distribute filter elements */
+    align-items: center;
+}
+
+#statusFilter, #searchInput {
+    padding: 0.75rem;
+    border: 1px solid #ddd; /* Light border color for filters */
+    border-radius: 4px;
+    width: 48%; /* Set width for filter elements */
+}
+
+#searchInput {
+    width: 48%; /* Set width for search input */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove space between borders */
+    margin-top: 1rem;
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Light border color for table */
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff; /* Header background color */
+    color: #fff; /* White text color for table headers */
+    cursor: pointer; /* Indicate that table headers are clickable */
+}
+
+td button.edit, td button.delete {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    margin: 0 0.25rem;
+}
+
+td button.edit {
+    background-color: #28a745; /* Green color for edit button */
+    color: #fff;
+}
+
+td button.edit:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+td button.delete {
+    background-color: #dc3545; /* Red color for delete button */
+    color: #fff;
+}
+
+td button.delete:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.sort-arrow {
+    margin-left: 0.5rem;
+    font-size: 0.75rem; /* Smaller arrow for sorting */
+}
+/* Default light mode styles */
+/* (Existing CSS remains the same) */
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .container {
+    background: #1e1e1e;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode h1 {
+    color: #e0e0e0;
+}
+
+body.dark-mode table, body.dark-mode th, body.dark-mode td {
+    border: 1px solid #333;
+}
+
+body.dark-mode th {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+body.dark-mode input, body.dark-mode select {
+    background: #333;
+    color: #e0e0e0;
+    border: 1px solid #555;
+}
+
+body.dark-mode button {
+    background-color: #555;
+    color: #e0e0e0;
+}
+
+body.dark-mode button:hover {
+    background-color: #666;
+}
